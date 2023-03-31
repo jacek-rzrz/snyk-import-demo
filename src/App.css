@@ -1,0 +1,85 @@
+.import-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.import-tile {
+  padding: 20px;
+  box-shadow: 1px 2px #e0e0e0;
+  color: #333;
+  margin: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30px 20px 30px 20px;
+}
+
+.import-tile-idle {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.import-tile-pending {
+  background-image: linear-gradient(#ece6e4, #ece6da);
+}
+
+.import-tile-progress {
+  background-image: linear-gradient(#ece6e4, #ece6da);
+}
+
+.import-tile-complete {
+  cursor: pointer;
+  background-image: linear-gradient(#e4e8e4, #dde8dd);
+}
+
+.target-header {
+  grid-column-start: span 4;
+}
+
+.import-id {
+  grid-row: 3;
+  grid-column-start: span 4;
+  font-size: 0.85em;
+}
+
+.import-status {
+  grid-row: 4;
+  grid-column-start: span 2;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9em
+}
+
+.import-duration {
+  grid-row: 4;
+  grid-column-start: 4;
+  text-align: right;
+}
+
+.target-owner {
+
+}
+
+.target-name {
+  font-weight: bold;
+}
+
+.target-branch {
+  font-size: 0.9em;
+  color: #555;
+  font-style: italic;
+}
+
+.log {
+  margin: 0;
+  padding: 2em;
+  font-size: 1.2em;
+  color: #eee;
+  background-color: #333;
+  display: flex;
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+}
